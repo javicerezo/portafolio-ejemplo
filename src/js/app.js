@@ -220,7 +220,7 @@ SE PUEDE HACER LA API IntersectionObserver, que tambien localiza elementos....IM
         }
     });
 
-    //Botones portfolio para modales
+    // Botones portfolio para modales
     porfolioListado.addEventListener('click', (e) => {
         let i = parseInt(e.target.getAttribute('value')) - 1;
         abrirModal(i);
@@ -271,6 +271,7 @@ SE PUEDE HACER LA API IntersectionObserver, que tambien localiza elementos....IM
         }, 3150);
     }
 
+    // funcion que detecta si el usuario tiene el darkMode de su pc activado y lo pone por defecto
     function darkMode() {
         const prefiereDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
         if (prefiereDarkMode.matches) {

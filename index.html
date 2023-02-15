@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior FrontEnd - El portfolio de Javi Cerezo</title>
+    <meta name="description" content="Portfolio profesional web">
+    <link rel="shortcut icon" href="build/img/favicon-transp.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preload" href="build/css/app.css" as="style">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="contenedor__menu posicion_a">
+            <div class="menu__izq">
+                <button class="darkmode" id="darkmode">
+                    <picture>
+                        <source srcset="build/img/favicon-transp.webp" type="image/webp">
+                        <source srcset="build/img/favicon-transp.png" type="image/png">
+                        <img loading="lazy" src="build/img/favicon-transp.png" class="img__darkmode" alt="icono modo oscuro">
+                    </picture>
+                    <span><i class="fa-solid fa-sun"></i></span>
+                    <span><i class="fa-solid fa-moon"></i></span>
+                </button>
+                <!-- <img class="img__menu" src="img/favicon-transp.png" alt=""> -->
+                <p class="titulo__menu"> El Portfolio de < JaviCerezo >
+                </p>
+            </div>
+            <input type="checkbox" id="check__menu">
+            <label for="check__menu" class="icono_m">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <label for="check__menu" class="icono_x">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <ul class="menu__der">
+                <li><a href="#" value="0" class="color_negro">SOBRE MÍ</a></li>
+                <li><a href="#" value="1">PORTFOLIO</a></li>
+                <li><a href="#" value="2">CONTACTO</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <!-- PORTADA -->
+    <section class="portada inicio">
+        <div class="contenedor">
+            <h1 class="javiCerezo">
+                < Javi Cerezo />
+            </h1>
+            <h2> - DESARROLLADOR FRONTEND JUNIOR - </h2>
+            <Button class="boton">[ Portafolio ]</Button>
+        </div>
+        <div class="marco__sup sup_a"></div>
+        <div class="marco__der der_a">
+            <a href="#"><i class="fa-regular fa-circle" value="0"></i></a>
+            <a href="#"><i class="fa-solid fa-circle" value="1"></i></a>
+            <a href="#"><i class="fa-solid fa-circle" value="2"></i></a>
+            <a href="#"><i class="fa-solid fa-circle" value="3"></i></a>
+        </div>
+        <div class="marco__inf inf_a">
+            <p class="inf_continua"><span>-</span>Continúa, <a href="#"><b value="0">QUIERO VER MÁS</b></a><span>-</span></p>
+            <p class="inf_inicio display_none"><span>-</span>Subir al, <a href="#"><b value="1">INICIO</b></a><span>-</span></p>
+        </div>
+        <div class="marco__izq izq_a">
+            <a href="https://www.linkedin.com/in/javicerezo/" target="_blanck"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/javicerezo" target="_blanck"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </section>
+    <!-- FIN DE PORTADA -->
+
+    <!-- SEPARADOR -->
+    <div class="separador-section">
+        <div class="tecnologias">
+            <div class="tarjeta">
+                <div class="descripcion">
+                    <h4 class="titulo">Lenguajes programación</h4>
+                    <ul>
+                        <li>- HTML5 + CSS3</li>
+                        <li>- JavaScript</li>
+                        <li>- PHP</li>
+                        <li>- MySQL</li>
+                        <li>- Node js</li>
+                        <li>- Python</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="descripcion">
+                    <h4 class="titulo">Framework & CMS's</h4>
+                    <ul>
+                        <li>- React js</li>
+                        <li>- Jquery</li>
+                        <li>- SASS</li>
+                        <li>- Bootstrap 5</li>
+                        <li>- Wordpress</li>
+                        <li>- Django</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="descripcion">
+                    <h4 class="titulo">Otros complementos</h4>
+                    <ul>
+                        <li>- IndexedDb</li>
+                        <li>- Gulp</li>
+                        <li>- CRUD MySQL</li>
+                        <li>- Testing</li>
+                        <li>- Git + GitHub</li>
+                        <li>- Patrones de diseño</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="iconos-tecnologias">
+            <li><i class="fab fa-html5"></i></li>
+            <li><i class="fab fa-css3-alt"></i></li>
+            <li><i class="fab fa-js-square"></i></li>
+            <li><i class="fa-brands fa-php"></i></li>
+            <li><i class="fa-solid fa-database"></i></li>
+            <li><i class="fab fa-node-js"></i></li>
+            <li><i class="fa-brands fa-python"></i></li>
+            <li><i class="fab fa-react"></i></li>
+            <li><i class="fab fa-sass"></i></li>
+            <li><i class="fa-brands fa-bootstrap"></i></li>
+            <li><i class="fab fa-wordpress"></i></li>
+            <li><i class="fab fa-gulp"></i></li>
+            <li><i class="fab fa-npm"></i></li>
+            <li><i class="fa-brands fa-git-alt"></i></li>
+        </ul>
+        <!-- Generated by https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
+        <div class="efecto-ola">
+            <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path class="ola1" d="M-16.64,139.64 C104.68,-149.48 0.85,130.77 502.54,147.55 L513.26,156.42 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255, 0.2);"></path>
+                </svg>
+            </div>
+            <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path class="ola1" d="M-16.64,139.64 C106.37,176.16 -51.06,-186.00 502.54,147.55 L513.26,156.42 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255, 0.2);"></path>
+                </svg>
+            </div>
+            <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path class="ola1" d="M-16.64,139.64 C566.31,85.38 455.13,-139.61 502.54,147.55 L513.26,156.42 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255, 0.2);"></path>
+                </svg>
+            </div>
+            <div style="height: 130px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path class="ola2" d="M-16.64,139.64 C36.96,189.97 -119.35,-198.83 311.23,161.36 L513.26,156.42 L0.28,151.48 Z" style="stroke: none; fill: rgb(255, 255, 255, 0.5);"></path>
+                </svg>
+            </div>
+            <div style="height: 130px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path class="ola2" d="M-16.64,139.64 C132.89,70.56 415.63,-58.69 521.72,161.36 L513.26,156.42 L0.28,151.48 Z" style="stroke: none; fill: rgb(255, 255, 255, 0.5);"></path>
+                </svg>
+            </div>
+            <div style="height: 90px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path class="ola3" d="M-1.41,154.45 C3.11,-126.78 91.13,68.59 130.07,129.78 L513.26,156.42 L-13.26,152.47 Z" style="stroke: none; fill: rgb(255, 255, 255, 1);"></path>
+                </svg>
+            </div>
+            <div style="height: 90px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path class="ola3" d="M39.78,137.67 C180.30,-118.89 113.71,125.83 240.12,147.55 L513.26,156.42 L-13.26,152.47 Z" style="stroke: none; fill: rgb(255, 255, 255, 1);"></path>
+                </svg>
+            </div>
+            <div style="height: 90px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path class="ola3" d="M147.01,116.95 C233.92,11.36 306.15,31.09 455.13,166.30 L513.26,156.42 L-13.26,152.47 Z" style="stroke: none; fill: rgb(255, 255, 255, 1);"></path>
+                </svg>
+            </div>
+            <div style="height: 90px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path class="ola3" d="M316.87,156.42 C351.30,42.94 491.82,-92.25 503.10,150.50 L513.26,156.42 L0.28,151.48 Z" style="stroke: none; fill: rgb(255, 255, 255, 1);"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- FIN DE SEPARADOR -->
+
+    <!-- SOBRE MI -->
+    <main class="sobreMi" id="sobreMi">
+        <h3>
+            Sobre<span> mí </span>
+        </h3>
+        <h4>Ingeniero industrial, FrontEnd developer.</h4>
+        <div class="contenedor-desc">
+            <p>Titulado en ingeniería industrial por la universidad de Granada en 2012,
+                con la especialidad de química industrial.</p>
+            <p>En 2020, dejé todo lo relacionado con la química para dedicarme de lleno a
+                la programacion. Todo empezó con un curso de "Analista-programador de aplicaciones
+                Java-Python y C++", por el Instituto Intecssa Formación.</p>
+            <p>Desde entonces, no he parado de formarme con varios cursos en Udemy. HTML5, CSS3,
+                Javascript, Jquery, PHP, React js, MySQL, etc.</p>
+            <p>Actualmente estoy centrado en el FrontEnd.</p>
+        </div>
+        <a href="build/cv/cv_JaviCerezo 19_08_2022.pdf" download="Cv_JaviCerezo" class="boton btn-amarillo" target="_blank">Ver Cv</a>
+    </main>
+    <!-- FIN SOBRE MI -->
+
+    <!-- PORTAFOLIO -->
+    <section class="porfolio" id="portfolio">
+        <div class="portfolio-titulo">
+            <h3>Mis<span> trabajos </span>web</h3>
+            <h4>Una muestra de mis trabajos</h4>
+        </div>
+        <div class="trabajos-porfolio">
+                <div class="card">
+                    <picture>
+                        <source srcset="build/img/trabajos/submarine.webp" type="image/webp">
+                        <source srcset="build/img/trabajos/submarine.png" type="image/png">
+                        <img loading="lazy" src="build/img/trabajos/submarine.png" alt="imagen portafolio">
+                    </picture>
+                    <picture>
+                        <source srcset="build/img/trabajos/submarine.webp" type="image/webp">
+                        <source srcset="build/img/trabajos/submarine.png" type="image/png">
+                        <img loading="lazy" src="build/img/trabajos/submarine.png" alt="imagen portafolio">
+                    </picture>
+                    <picture>
+                        <source srcset="build/img/trabajos/submarine.webp" type="image/webp">
+                        <source srcset="build/img/trabajos/submarine.png" type="image/png">
+                        <img loading="lazy" src="build/img/trabajos/submarine.png" alt="imagen portafolio">
+                    </picture>
+                    <picture>
+                        <source srcset="build/img/trabajos/submarine.webp" type="image/webp">
+                        <source srcset="build/img/trabajos/submarine.png" type="image/png">
+                        <img loading="lazy" src="build/img/trabajos/submarine.png" alt="imagen portafolio">
+                    </picture>
+                    <picture>
+                        <source srcset="build/img/trabajos/submarine.webp" type="image/webp">
+                        <source srcset="build/img/trabajos/submarine.png" type="image/png">
+                        <img loading="lazy" src="build/img/trabajos/submarine.png" alt="imagen portafolio">
+                    </picture>
+                    <picture>
+                        <source srcset="build/img/trabajos/submarine.webp" type="image/webp">
+                        <source srcset="build/img/trabajos/submarine.png" type="image/png">
+                        <img loading="lazy" src="build/img/trabajos/submarine.png" alt="imagen portafolio">
+                    </picture>
+                </div>
+        </div>
+    </section>
+    <!-- FIN PORTAFOLIO -->
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="contenedor-form">
+            <div class="datos-contacto">
+                <h3>Contacto</h3>
+                <ul>
+                    <div class="iconos">
+                        <i class="fa-solid fa-phone-flip"></i>
+                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="datos-iconos">
+                        <li class="datos-telefono">Telf: 644942199</li>
+                        <li class="datos-email">E-mail: hola@javicerezo.com</li>
+                        <li class="datos-horario">Horario: 8:00 - 17:00</li>
+                    </div>
+                </ul>
+                <div class="redes-sociales">
+                    <a href="https://linkedin.com/in/javicerezoorellana" target="_blanck"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/javicerezo" target="_blanck"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <form class="formulario" id="formulario">
+                <input id="nombre" type="text" placeholder="NOMBRE">
+                <input id="email" type="email" placeholder="EMAIL">
+                <textarea name="" id="asunto" placeholder="ASUNTO"></textarea>
+                <div class="contenedor">
+                    <button id="btn-enviar" class="boton btn-amarillo btn-formulario" type="submit">Enviar <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="mensaje__form">
+            <div class="spinner display_none" id="spinner">
+                <div class="sk-chase">
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                </div>
+            </div>
+            <div class="spinner2 display_none"></div>
+            <div class="mensaje" id="mensaje"></div>
+        </div>
+    </section>
+    <!-- FIN CONTACTO -->
+
+    <!-- MODALES PORTFOLIO -->
+    <div id="modales__listado">
+            <section class="modal">
+                <div class="modal__contenedor">
+                    <div class="parte_superior">
+                        <div>
+                            <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+                            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                        <a href="#" class="modal__close">X</a>
+                    </div>
+                    <h3 class="modal__titulo">titulo</h3>
+                    <img loading="lazy" src="#" class="modal__img">
+                    <div class="parte_inferior">
+                        <p class="modal__parrafo"><span>Características: tecnologoias</span><br><br>descripcion</p>
+                        <a href="#" target="_blank" class="boton btn-amarillo">Ver trabajo</a>
+                    </div>
+                </div>
+            </section>
+    </div>
+    <!-- FIN MODALES -->
+
+    <!-- FOOTER -->
+    <footer class="">
+        <div class="footer__nombre">Javi Cerezo - <span>Junior FrontEnd</span></div>
+        <div class="footer__redes-sociales">
+            <a href="https://linkedin.com/in/javicerezoorellana" target="_blanck"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/javicerezo" target="_blanck"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="footer__flecha-arriba">
+            <a href="#" id="btn-flechaArriba"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- <script src="build/js/bundle.min.js"></script> -->
+    <!-- DESARROLLO  -->
+    <script src="src/js/app.js"></script>
+    <script src="src/js/formulario.js"></script>
+    <script src="src/js/modernizr.js"></script>
+</body>
+
+</html>
