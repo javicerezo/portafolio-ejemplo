@@ -1,0 +1,55 @@
+@use 'settings/variables' as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
+    font-family: v.$principal;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+img, picture {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    color: v.$negro;
+}
+h1, h2, h3 {
+    font-weight: 300;
+    text-align: center;
+}
+
+p {
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    padding: 0;
+    // padding-bottom: 2rem;
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+}
+a {
+    display: inline-block;
+    width: auto;
+    color: inherit;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}

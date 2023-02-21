@@ -1,0 +1,16 @@
+@use 'settings/variables' as v;
+
+.o-col {
+    &-100 {
+        width: 100%;
+        padding: v.$padding_col;
+    }
+    &-90 {
+        width: 90%;
+        padding: v.$padding_col;
+    }
+    &-50 {
+        width: 50%;
+        padding: v.$padding_col;
+    }
+}

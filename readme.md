@@ -1,9 +1,8 @@
 # Título del proyecto
-![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/maquetacion-radio/master/src/assets/img/radio.png)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/...)
 
 ## Ejemplo en vivo
-- [URL-de-github-pages-de-este-proyecto](URL-de-github-pages-de-este-proyecto) 🚀
-- [URL-de-la-api](URL-de-la-api)
+- [Haz clic para ver el proyeto](https://javicerezo.github.io/ejemplo-portafolio/) 🚀
 
 ## Descripción 📑
 Un ejemplo sencillo de un portafolio para un desarrollador web.
@@ -20,9 +19,9 @@ Un ejemplo sencillo de un portafolio para un desarrollador web.
 ## Vista previa del proyecto
 Si quieres hechar un vistazo al proyecto, te recomiendo:
 
-![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/maquetacion-radio/master/src/assets/img/radio.png)
-![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/maquetacion-radio/master/src/assets/img/radio.png)
-![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/maquetacion-radio/master/src/assets/img/radio.png)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/...)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/...)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/...)
 
 ## Autor ✒️
 **JAVI CEREZO**
