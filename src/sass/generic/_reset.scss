@@ -1,36 +1,4 @@
-/* Definimos las Custom properties */
-:root{
-    /* Colores */
-    --color-primario: #181818;
-    --color-secundario: #f0f0f0;
-    /* Tipografía */
-    --tipo-principal   : Helvetica, Arial, sans-serif;
-    --tipo-secundaria  : Verdana;
-}
-  
-/* (Opcional) Las adaptamos al modo oscuro */
-@media (prefers-color-scheme: dark) {
-    :root{
-        --color-primario: #f0f0f0;
-        --color-secundario: #181818;
-  }
-}
-
-/* (Opcional) Configuramos si un usuario ha activado el modo alto contraste. (WD) */
-@media (prefers-contrast: high){
-    :root{
-        --color-primario: #000000;
-        --color-secundario: #ffffff;
-    }
-}
-
-/* (Opcional) Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation: none;
-        transition: none;
-  } //NOTA: CAMBIAR EL * POR LA ETIQUETA CONCRETA PARA NO AFERCAR AL PERFORMANCE
-}
+@use 'settings/variables' as v;
 
 /* Reseteamos los margin y paddings de todas las etiquetas */
 * , *::before , *::after{
@@ -46,9 +14,9 @@
 
 /* Evitamos problemas con las imagenes */
 img , picture , video , iframe , figure{
+  display: block;
   max-width: 100%;
   width: 100%;
-  display: block;
   /* (Opcional) */ object-fit: cover;        
   /* (Opcional) */ object-position: center center;
 }
@@ -56,9 +24,7 @@ img , picture , video , iframe , figure{
 /* Reseteamos los enlaces para funcionar como cajas... */
 a {
   display: block;
-  text-decoration: none;
-  color:inherit;
-  font-size:inherit;
+  cursor: pointer;
 }
 /* ... excepto los que se encuentran en párrafos */
 p a {
@@ -77,10 +43,12 @@ html {
 
 /* Desactivamos estilos por defecto de las principales etiquetas de texto */
 h1 , h2 , h3 , h4 , h5 , h6 , p ,span , a , strong , blockquote , i , b , u , em {
+  font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
   font-style: inherit;
   text-decoration: none;
+  text-transform: none;
   color:inherit;
 }
 /* Evitamos problemas con los pseudoelementos de quotes */
@@ -91,8 +59,8 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 /* (Opcional) Configuramos el texto que seleccionamos */
 ::selection {
-  background-color: var(--negro);
-  color: var(--blanco);
+  background-color: map-get(v.$colores, color-primario);
+  color: map-get(v.$colores, color-secundario);
 }
 
 /* Nivelamos problemas de tipografías y colocación de formularios */
@@ -121,14 +89,13 @@ svg{
 
 /* Configuramos la tipografía para toda la web */
 body {
-  min-height  : 100vh;
-  font-size   : 100%;
-  font-family : var(--tipo-principal);
-  color       : var(--color-primario);
-  background-color: var(--color-secundario);
+    min-height  : 100vh;
+    font-size   : 100%;
+    font-family : map-get(v.$fuentes, tipo-principal);
+    color       : map-get(v.$colores, color-primario);
+    background-color: map-get(v.$colores, color-secundario);
   /* /Opcional) */ line-height: 1.4em;
-  /* (Opcional) */ hyphens: auto;
-  /* (Opcional) */ font-smooth: always;
+  // /* (Opcional) */ hyphens: auto;
   /* (Opcional) */ -webkit-font-smoothing: antialiased;
   /* (Opcional) */ -moz-osx-font-smoothing: grayscale;
 }

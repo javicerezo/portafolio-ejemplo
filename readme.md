@@ -1,5 +1,5 @@
 # Título del proyecto
-![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/...)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/imagen1.png)
 
 ## Ejemplo en vivo
 - [Haz clic para ver el proyeto](https://javicerezo.github.io/ejemplo-portafolio/) 🚀
@@ -19,9 +19,8 @@ Un ejemplo sencillo de un portafolio para un desarrollador web.
 ## Vista previa del proyecto
 Si quieres hechar un vistazo al proyecto, te recomiendo:
 
-![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/...)
-![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/...)
-![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/...)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/imagen2.png)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/imagen3.png)
 
 ## Autor ✒️
 **JAVI CEREZO**
