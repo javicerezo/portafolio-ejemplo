@@ -15,157 +15,158 @@
 
 <body>
     <!-- HEADER -->
-    <header>
-        <div class="contenedor__menu posicion_a">
-            <div class="menu__izq">
-                <button class="darkmode" id="darkmode">
-                    <div>
-                        <img loading="lazy" src="build/img/favicon-transp.png" class="img__darkmode" alt="icono modo oscuro">
-                    </div>
-                    <span><i class="fa-solid fa-sun"></i></span>
-                    <span><i class="fa-solid fa-moon"></i></span>
-                </button>
-                <!-- <img class="img__menu" src="img/favicon-transp.png" alt=""> -->
-                <p class="titulo__menu"> El Portfolio de < NombreApellidos >
-                </p>
+    <header class="c-header c-header--mod o-container">
+        <div class="c-header__izquierda">
+            <div class="c-header__dark-mode">
+                <div class="c-header__img">
+                    <img src="build/img/favicon-transp.png" alt="icono modo oscuro">
+                </div>
+                <span class="c-header__span"><i class="fa-solid fa-moon"></i></span>
+                <span class="c-header__span"><i class="fa-solid fa-sun"></i></span>
             </div>
+            <p class="c-header__autor"> El Portfolio de < NombreApellidos >
+            </p>
+        </div>
+        <div class="c-header__burger">
             <input type="checkbox" id="check__menu">
-            <label for="check__menu" class="icono_m">
+            <label class="c-header__icono-m" for="check__menu">
                 <i class="fa-solid fa-bars"></i>
             </label>
-            <label for="check__menu" class="icono_x">
+            <label class="c-header__icono-x" for="check__menu">
                 <i class="fa-solid fa-xmark"></i>
             </label>
-            <ul class="menu__der">
-                <li><a href="#" value="0" class="color_negro">SOBRE MÍ</a></li>
-                <li><a href="#" value="1">PORTAFOLIO</a></li>
-                <li><a href="#" value="2">CONTACTO</a></li>
-            </ul>
         </div>
+        <ul class="c-header__nav">
+            <li class="c-header__li"><a class="c-header__a" href="#" value="0">SOBRE MÍ</a></li>
+            <li class="c-header__li"><a class="c-header__a" href="#" value="1">PORTAFOLIO</a></li>
+            <li class="c-header__li"><a class="c-header__a" href="#" value="2">CONTACTO</a></li>
+        </ul>
     </header>
     
     <!-- PORTADA -->
-    <section class="portada inicio">
-        <div class="contenedor">
-            <h1 class="javiCerezo">
+    <section class="c-portada">
+        <div class="c-portada__contanier">
+            <h1 class="c-portada__h1">
                 < Nombre Apellidos />
             </h1>
-            <h2> - DESARROLLADOR WEB - </h2>
-            <Button class="boton">[ Portafolio ]</Button>
+            <h2 class="c-portada__h2"> - DESARROLLADOR WEB - </h2>
+            <div class="c-portada__button">
+                <Button class="o-button">[ Portafolio ]</Button>
+            </div>
         </div>
-        <div class="marco__sup sup_a"></div>
-        <div class="marco__der der_a">
+    </section>
+
+    <!-- FIN DE PORTADA -->
+    
+    <!-- CUADRO AMARILLO -->
+    <section class="c-cuadro">
+        <div class="c-cuadro__sup c-cuadro__sup--mod"></div>
+        <div class="c-cuadro__der c-cuadro__der--mod">
             <a href="#"><i class="fa-regular fa-circle" value="0"></i></a>
             <a href="#"><i class="fa-solid fa-circle" value="1"></i></a>
             <a href="#"><i class="fa-solid fa-circle" value="2"></i></a>
             <a href="#"><i class="fa-solid fa-circle" value="3"></i></a>
         </div>
-        <div class="marco__inf inf_a">
-            <p class="inf_continua"><span>-</span>Continúa, <a href="#"><b value="0">QUIERO VER MÁS</b></a><span>-</span></p>
-            <p class="inf_inicio display_none"><span>-</span>Subir al, <a href="#"><b value="1">INICIO</b></a><span>-</span></p>
+        <div class="c-cuadro__inf c-cuadro__inf--mod">
+            <p><span>-</span>Continúa, <a href="#"><b value="0">QUIERO VER MÁS</b></a><span>-</span></p>
+            <p class="u-display--none"><span>-</span>Subir al, <a href="#"><b value="1">INICIO</b></a><span>-</span></p>
         </div>
-        <div class="marco__izq izq_a">
+        <div class="c-cuadro__izq c-cuadro__izq--mod">
             <a href="https://www.linkedin.com/in/javicerezo/" target="_blanck"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/javicerezo/ejemplo-portafolio/" target="_blanck"><i class="fa-brands fa-github"></i></a>
         </div>
     </section>
-    <!-- FIN DE PORTADA -->
-
+    <!-- FIN CUADRO AMARILLO -->
+    
     <!-- SEPARADOR -->
-    <div class="separador-section">
-        <div class="tecnologias">
-            <div class="tarjeta">
-                <div class="descripcion">
-                    <h4 class="titulo">Lenguajes programación</h4>
-                    <ul>
-                        <li>- HTML5 + CSS3</li>
-                        <li>- JavaScript</li>
-                        <li>- PHP</li>
-                        <li>- MySQL</li>
-                        <li>- Node js</li>
-                        <li>- Python</li>
-                    </ul>
-                </div>
+    <div class="c-tecnologias o-container">
+        <div class="c-tecnologias__listado">
+            <div class="c-tecnologias__tarjeta">
+                <h4 class="c-tecnologias__titulo">Lenguajes programación</h4>
+                <ul class="c-tecnologias__ul">
+                    <li class="c-tecnologias__li">- HTML5 + CSS3</li>
+                    <li class="c-tecnologias__li">- JavaScript</li>
+                    <li class="c-tecnologias__li">- PHP</li>
+                    <li class="c-tecnologias__li">- MySQL</li>
+                    <li class="c-tecnologias__li">- Node js</li>
+                    <li class="c-tecnologias__li">- Python</li>
+                </ul>
             </div>
-            <div class="tarjeta">
-                <div class="descripcion">
-                    <h4 class="titulo">Framework & CMS's</h4>
-                    <ul>
-                        <li>- React js</li>
-                        <li>- Jquery</li>
-                        <li>- SASS</li>
-                        <li>- Bootstrap 5</li>
-                        <li>- Wordpress</li>
-                        <li>- Django</li>
-                    </ul>
-                </div>
+            <div class="c-tecnologias__tarjeta">
+                <h4 class="c-tecnologias__titulo">Framework & CMS's</h4>
+                <ul class="c-tecnologias__ul">
+                    <li class="c-tecnologias__li">- React js</li>
+                    <li class="c-tecnologias__li">- Jquery</li>
+                    <li class="c-tecnologias__li">- SASS</li>
+                    <li class="c-tecnologias__li">- Bootstrap 5</li>
+                    <li class="c-tecnologias__li">- Wordpress</li>
+                    <li class="c-tecnologias__li">- Django</li>
+                </ul>
             </div>
-            <div class="tarjeta">
-                <div class="descripcion">
-                    <h4 class="titulo">Otros complementos</h4>
-                    <ul>
-                        <li>- IndexedDb</li>
-                        <li>- Gulp</li>
-                        <li>- CRUD MySQL</li>
-                        <li>- Testing</li>
-                        <li>- Git + GitHub</li>
-                        <li>- Patrones de diseño</li>
-                    </ul>
-                </div>
+            <div class="c-tecnologias__tarjeta">
+                <h4 class="c-tecnologias__titulo">Otros complementos</h4>
+                <ul class="c-tecnologias__ul">
+                    <li class="c-tecnologias__li">- IndexedDb</li>
+                    <li class="c-tecnologias__li">- Gulp</li>
+                    <li class="c-tecnologias__li">- CRUD MySQL</li>
+                    <li class="c-tecnologias__li">- Testing</li>
+                    <li class="c-tecnologias__li">- Git + GitHub</li>
+                    <li class="c-tecnologias__li">- Patrones de diseño</li>
+                </ul>
             </div>
         </div>
-        <ul class="iconos-tecnologias">
-            <li><i class="fab fa-html5"></i></li>
-            <li><i class="fab fa-css3-alt"></i></li>
-            <li><i class="fab fa-js-square"></i></li>
-            <li><i class="fa-brands fa-php"></i></li>
-            <li><i class="fa-solid fa-database"></i></li>
-            <li><i class="fab fa-node-js"></i></li>
-            <li><i class="fa-brands fa-python"></i></li>
-            <li><i class="fab fa-react"></i></li>
-            <li><i class="fab fa-sass"></i></li>
-            <li><i class="fa-brands fa-bootstrap"></i></li>
-            <li><i class="fab fa-wordpress"></i></li>
-            <li><i class="fab fa-gulp"></i></li>
-            <li><i class="fab fa-npm"></i></li>
-            <li><i class="fa-brands fa-git-alt"></i></li>
+        <ul class="c-tecnologias__iconos">
+            <li class="c-tecnologias__iconos-li"><i class="fab fa-html5"></i></li>
+            <li class="c-tecnologias__iconos-li"><i class="fab fa-css3-alt"></i></li>
+            <li class="c-tecnologias__iconos-li"><i class="fab fa-js-square"></i></li>
+            <li class="c-tecnologias__iconos-li"><i class="fa-brands fa-php"></i></li>
+            <li class="c-tecnologias__iconos-li"><i class="fa-solid fa-database"></i></li>
+            <li class="c-tecnologias__iconos-li"><i class="fab fa-node-js"></i></li>
+            <li class="c-tecnologias__iconos-li"><i class="fa-brands fa-python"></i></li>
+            <li class="c-tecnologias__iconos-li"><i class="fab fa-react"></i></li>
+            <li class="c-tecnologias__iconos-li"><i class="fab fa-sass"></i></li>
+            <li class="c-tecnologias__iconos-li"><i class="fa-brands fa-bootstrap"></i></li>
+            <li class="c-tecnologias__iconos-li"><i class="fab fa-wordpress"></i></li>
+            <li class="c-tecnologias__iconos-li"><i class="fab fa-gulp"></i></li>
+            <li class="c-tecnologias__iconos-li"><i class="fab fa-npm"></i></li>
+            <li class="c-tecnologias__iconos-li"><i class="fa-brands fa-git-alt"></i></li>
         </ul>
         <!-- Generated by https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
-        <div class="efecto-ola">
+        <div class="c-tecnologias__separador c-efecto-ola">
             <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path class="ola1" d="M-16.64,139.64 C104.68,-149.48 0.85,130.77 502.54,147.55 L513.26,156.42 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255, 0.2);"></path>
+                    <path class="ola1" d="M-16.64,139.64 C104.68,-149.48 0.85,130.77 502.54,147.55 L513.26,156.42 L0.00,150.00 Z" style="stroke: none; fill: rgb(240, 240, 240, 0.2);"></path>
                 </svg>
             </div>
             <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path class="ola1" d="M-16.64,139.64 C106.37,176.16 -51.06,-186.00 502.54,147.55 L513.26,156.42 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255, 0.2);"></path>
+                    <path class="ola1" d="M-16.64,139.64 C106.37,176.16 -51.06,-186.00 502.54,147.55 L513.26,156.42 L0.00,150.00 Z" style="stroke: none; fill: rgb(240, 240, 240, 0.2);"></path>
                 </svg>
             </div>
             <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path class="ola1" d="M-16.64,139.64 C566.31,85.38 455.13,-139.61 502.54,147.55 L513.26,156.42 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255, 0.2);"></path>
+                    <path class="ola1" d="M-16.64,139.64 C566.31,85.38 455.13,-139.61 502.54,147.55 L513.26,156.42 L0.00,150.00 Z" style="stroke: none; fill: rgb(240, 240, 240, 0.2);"></path>
                 </svg>
             </div>
             <div style="height: 130px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path class="ola2" d="M-16.64,139.64 C36.96,189.97 -119.35,-198.83 311.23,161.36 L513.26,156.42 L0.28,151.48 Z" style="stroke: none; fill: rgb(255, 255, 255, 0.5);"></path>
+                    <path class="ola2" d="M-16.64,139.64 C36.96,189.97 -119.35,-198.83 311.23,161.36 L513.26,156.42 L0.28,151.48 Z" style="stroke: none; fill: rgb(240, 240, 240, 0.5);"></path>
                 </svg>
             </div>
             <div style="height: 130px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path class="ola2" d="M-16.64,139.64 C132.89,70.56 415.63,-58.69 521.72,161.36 L513.26,156.42 L0.28,151.48 Z" style="stroke: none; fill: rgb(255, 255, 255, 0.5);"></path>
+                    <path class="ola2" d="M-16.64,139.64 C132.89,70.56 415.63,-58.69 521.72,161.36 L513.26,156.42 L0.28,151.48 Z" style="stroke: none; fill: rgb(240, 240, 240, 0.5);"></path>
                 </svg>
             </div>
             <div style="height: 90px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path class="ola3" d="M-1.41,154.45 C3.11,-126.78 91.13,68.59 130.07,129.78 L513.26,156.42 L-13.26,152.47 Z" style="stroke: none; fill: rgb(255, 255, 255, 1);"></path>
+                    <path class="ola3" d="M-1.41,154.45 C3.11,-126.78 91.13,68.59 130.07,129.78 L513.26,156.42 L-13.26,152.47 Z" style="stroke: none; fill: rgb(240, 240, 240, 1);"></path>
                 </svg>
             </div>
             <div style="height: 90px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path class="ola3" d="M39.78,137.67 C180.30,-118.89 113.71,125.83 240.12,147.55 L513.26,156.42 L-13.26,152.47 Z" style="stroke: none; fill: rgb(255, 255, 255, 1);"></path>
+                    <path class="ola3" d="M39.78,137.67 C180.30,-118.89 113.71,125.83 240.12,147.55 L513.26,156.42 L-13.26,152.47 Z" style="stroke: none; fill: rgb(240, 240, 240, 1);"></path>
                 </svg>
             </div>
             <div style="height: 90px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path class="ola3" d="M147.01,116.95 C233.92,11.36 306.15,31.09 455.13,166.30 L513.26,156.42 L-13.26,152.47 Z" style="stroke: none; fill: rgb(255, 255, 255, 1);"></path>
+                    <path class="ola3" d="M147.01,116.95 C233.92,11.36 306.15,31.09 455.13,166.30 L513.26,156.42 L-13.26,152.47 Z" style="stroke: none; fill: rgb(240, 240, 240, 1);"></path>
                 </svg>
             </div>
             <div style="height: 90px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path class="ola3" d="M316.87,156.42 C351.30,42.94 491.82,-92.25 503.10,150.50 L513.26,156.42 L0.28,151.48 Z" style="stroke: none; fill: rgb(255, 255, 255, 1);"></path>
+                    <path class="ola3" d="M316.87,156.42 C351.30,42.94 491.82,-92.25 503.10,150.50 L513.26,156.42 L0.28,151.48 Z" style="stroke: none; fill: rgb(240, 240, 240, 1);"></path>
                 </svg>
             </div>
         </div>
@@ -173,83 +174,83 @@
     <!-- FIN DE SEPARADOR -->
 
     <!-- SOBRE MI -->
-    <main class="sobreMi" id="sobreMi">
-        <h3>
-            Sobre<span> mí </span>
-        </h3>
-        <h4>Frontend developer.</h4>
-        <div class="contenedor-desc">
+    <section class="c-sobre-mi o-container">
+        <h3 class="c-sobre-mi__h3">Sobre<span> mí </span></h3>
+        <h4 class="c-sobre-mi__h4">Frontend developer.</h4>
+        <div class="c-sobre-mi__descripcion">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ea nihil repudiandae sapiente eligendi? Nam amet, in eligendi veniam quo corporis eaque necessitatibus, labore a culpa magni repellendus aut nobis.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, ea!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores libero molestiae ipsum, culpa, maxime labore numquam excepturi eum voluptas minima quasi laboriosam voluptatibus dignissimos ea est illum et nihil alias!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempora esse est vero eveniet adipisci.</p>
         </div>
-        <a href="#" class="boton btn-amarillo" target="_blank">Ver Cv</a>
-    </main>
+        <a class="c-sobre-mi__a o-button o-button--amarillo" href="#" target="_blank">Ver Cv</a>
+    </section>
     <!-- FIN SOBRE MI -->
 
     <!-- PORTAFOLIO -->
-    <section class="porfolio" id="portfolio">
-        <div class="portfolio-titulo">
-            <h3>Mis<span> trabajos </span>web</h3>
-            <h4>Una muestra de mis trabajos.</h4>
-        </div>
-        <div class="trabajos-porfolio">
-                <div class="card">
-                    <img loading="lazy" src="build/img/portafolio/submarine.png" alt="imagen portafolio">
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="build/img/portafolio/cabin.png" alt="imagen portafolio">
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="build/img/portafolio/cake.png" alt="imagen portafolio">
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="build/img/portafolio/game.png" alt="imagen portafolio">
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="build/img/portafolio/safe.png" alt="imagen portafolio">
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="build/img/portafolio/circus.png" alt="imagen portafolio">
-                </div>
-        </div>
-    </section>
+    <main class="c-trabajos o-container">
+        <h3 class="c-trabajos__h3">Mis<span> trabajos </span>web</h3>
+        <h4 class="c-trabajos__h4">Una muestra de mis trabajos.</h4>
+        <ul class="c-trabajos__ul">
+            <li class="c-trabajos__li">
+                <img class="c-trabajos__img1" loading="lazy" 
+                src="build/img/portafolio/submarine.png" alt="imagen portafolio">
+                <span class="c-trabajos__img2"><i class="fas fa-plus fa-3x"></i></span>
+            </li>
+            <li class="c-trabajos__li">
+                <img class="c-trabajos__img1" loading="lazy" 
+                src="build/img/portafolio/cabin.png" alt="imagen portafolio">
+                <span class="c-trabajos__img2"><i class="fas fa-plus fa-3x"></i></span>
+            </li>
+            <li class="c-trabajos__li">
+                <img class="c-trabajos__img1" loading="lazy" 
+                src="build/img/portafolio/cake.png" alt="imagen portafolio">
+                <span class="c-trabajos__img2"><i class="fas fa-plus fa-3x"></i></span>
+            </li>
+            <li class="c-trabajos__li">
+                <img class="c-trabajos__img1" loading="lazy" 
+                src="build/img/portafolio/game.png" alt="imagen portafolio">
+                <span class="c-trabajos__img2"><i class="fas fa-plus fa-3x"></i></span>
+            </li>
+            <li class="c-trabajos__li">
+                <img class="c-trabajos__img1" loading="lazy" 
+                src="build/img/portafolio/safe.png" alt="imagen portafolio">
+                <span class="c-trabajos__img2"><i class="fas fa-plus fa-3x"></i></span>
+            </li>
+            <li class="c-trabajos__li">
+                <img class="c-trabajos__img1" loading="lazy" 
+                src="build/img/portafolio/circus.png" alt="imagen portafolio">
+                <span class="c-trabajos__img2"><i class="fas fa-plus fa-3x"></i></span>
+            </li>
+        </ul>
+    </main>
     <!-- FIN PORTAFOLIO -->
 
     <!-- CONTACTO -->
-    <section class="contacto" id="contacto">
-        <div class="contenedor-form">
-            <div class="datos-contacto">
-                <h3>Contacto</h3>
+    <section class="c-contacto o-container">
+        <div class="c-contacto__formulario">
+            <div class="c-contacto__datos">
+                <h3 class="c-contacto__h3">Contacto</h3>
                 <ul>
-                    <div class="iconos">
-                        <i class="fa-solid fa-phone-flip"></i>
-                        <i class="fa-solid fa-envelope"></i>
-                        <i class="fa-solid fa-clock"></i>
-                    </div>
-                    <div class="datos-iconos">
-                        <li class="datos-telefono">Telf: 123456789</li>
-                        <li class="datos-email">E-mail: hola@correo.com</li>
-                        <li class="datos-horario">Horario: 8:00 - 17:00</li>
-                    </div>
+                    <li class="c-contacto__li"><i class="fa-solid fa-phone-flip"></i>Telf: 123456789</li>
+                    <li class="c-contacto__li"><i class="fa-solid fa-envelope"></i>E-mail: hola@correo.com</li>
+                    <li class="c-contacto__li"><i class="fa-solid fa-clock"></i>Horario: 8:00 - 17:00</li>
                 </ul>
-                <div class="redes-sociales">
+                <div class="c-contacto__sociales">
                     <a href="https://linkedin.com/in/javicerezoorellana" target="_blanck"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/javicerezo" target="_blanck"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
-            <form class="formulario" id="formulario">
+            <form class="c-contacto__inputs" id="formulario">
                 <input id="nombre" type="text" placeholder="NOMBRE">
                 <input id="email" type="email" placeholder="EMAIL">
                 <textarea name="" id="asunto" placeholder="ASUNTO"></textarea>
-                <div class="contenedor">
-                    <button id="btn-enviar" class="boton btn-amarillo btn-formulario" type="submit">Enviar <i class="fa-solid fa-paper-plane"></i>
-                    </button>
-                </div>
+                <button class="c-contacto__btn o-button o-button--amarillo btn-formulario"
+                id="btn-enviar" type="submit">Enviar <i class="fa-solid fa-paper-plane"></i>
+                </button>
             </form>
         </div>
-        <div class="mensaje__form">
+        <div class="c-contacto__respuesta">
             <div class="spinner display_none" id="spinner">
                 <div class="sk-chase">
                     <div class="sk-chase-dot"></div>
@@ -265,9 +266,22 @@
         </div>
     </section>
     <!-- FIN CONTACTO -->
+    
+    <!-- FOOTER -->
+    <footer class="c-footer o-container">
+        <p class="c-footer__autor">Nombre Apellidos - <span>Frontend developer</span></p>
+        <div class="c-footer__sociales">
+            <a href="https://linkedin.com/in/javicerezoorellana" target="_blanck"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/javicerezo" target="_blanck"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="c-footer__flecha">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+    <!-- FIN FOOTER -->
 
     <!-- MODALES PORTFOLIO -->
-    <div id="modales__listado">
+    <!-- <div id="modales__listado">
             <section class="modal">
                 <div class="modal__contenedor">
                     <div class="parte_superior">
@@ -285,20 +299,9 @@
                     </div>
                 </div>
             </section>
-    </div>
+    </div> -->
     <!-- FIN MODALES -->
 
-    <!-- FOOTER -->
-    <footer class="">
-        <div class="footer__nombre">Javi Cerezo - <span>Junior FrontEnd</span></div>
-        <div class="footer__redes-sociales">
-            <a href="https://linkedin.com/in/javicerezoorellana" target="_blanck"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/javicerezo" target="_blanck"><i class="fa-brands fa-github"></i></a>
-        </div>
-        <div class="footer__flecha-arriba">
-            <a href="#" id="btn-flechaArriba"><i class="fa-solid fa-arrow-up"></i></a>
-        </div>
-    </footer>
 
     <!-- <script src="build/js/bundle.min.js"></script> -->
     <!-- DESARROLLO  -->

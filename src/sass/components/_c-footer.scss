@@ -1,0 +1,44 @@
+@use 'settings/variables' as v;
+@use 'tools/mixins' as  m;
+
+.c-footer {
+    background-color: map-get(v.$colores, color-primario);
+    padding: 0.5rem;
+    margin-bottom: 0;
+    @include m.flex (row, nowrap, space-between, center);
+    @include m.telefono-xl {
+        padding: 1.25rem;
+    }
+    @include m.tablet {
+        width: calc( 100% - 2.5rem);
+        margin-bottom: 1.25rem;
+    }
+    &__autor {
+        color: map-get(v.$colores, color-secundario);
+        font-size: 1em;
+        @include m.tablet {
+            font-size: 1.25rem;
+        }
+        span {
+            color: map-get(v.$colores, color-secundario);
+            font-size: .9375rem;
+        }
+    }
+    &__sociales {
+        color: map-get(v.$colores, color-secundario);
+        @include m.flex (row, nowrap, space-between, center);
+        a {
+            padding: .625rem;
+            font-size: 1.25em;
+        }
+    }
+    &__flecha {
+        i {
+            color: map-get(v.$colores, color-secundario);
+        }
+        @include m.tablet {
+            display: none;
+        }
+    }
+    
+}

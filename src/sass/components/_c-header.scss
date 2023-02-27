@@ -1,0 +1,109 @@
+@use 'settings/variables' as v;
+@use 'tools/mixins' as m;
+
+.c-header {
+    @include m.flex (row, nowrap, space-between, center);
+    position: fixed;
+    top: 2.5rem;
+    height: 2.1875rem;
+    z-index: 100;
+    &--mod {
+        top: 0;
+    }
+    &__izquierda {
+        @include m.flex (row, nowrap, left, center);
+        margin-left: .3125rem;
+        @include m.telefono-xl {
+            margin-left: 3.125rem;
+        }
+    }
+    &__dark-mode {
+        background-color: map-get(v.$colores, color-fondo);
+        border-radius: .9375rem;
+        padding: 0 0.5rem;
+        position: relative;
+        cursor: pointer;
+        &--mod {
+            background-color: #343d5b;
+        }
+    }
+    &__img {
+        height: 1.875em;
+        width: 1.875em;
+        position: absolute;
+        top: -.05rem;
+        left: -.2rem;
+        &--mod {
+            left: 1.75rem;
+        }
+    }
+    &__span {
+        color: map-get(v.$colores, color-secundario);
+        line-height: 1.5625rem;
+        font-size: .75rem;
+        padding: 0 0.2rem;
+    }
+    &__autor {
+        color: map-get(v.$colores, color-secundario);
+        font-family: map-get(v.$fuentes, tipo-secundaria);
+        padding-left: 0.5rem;
+        font-style: italic;
+        font-weight: 600;
+        display: none;
+        @include m.telefono-m {
+            font-size: .6em;
+            display: block;
+        }
+        @include m.telefono-xl {
+            font-size: .75em;
+            padding-left: 1rem;
+        }
+    }
+    &__burger {
+        position: relative;
+        // border: 2px solid map-get(v.$colores, color-primario);
+        // border-radius: 5px;
+        // padding: .125rem .25rem;
+        margin: 0 1rem;
+        @include m.tablet {
+            display: none;
+        }
+    }
+    &__icono-m {
+        font-size: 20px;
+        position: relative;
+        // display: none;
+    }
+    &__icono-x {
+        font-size: 25px;
+        display: none;
+    }
+    &__nav {
+        display: none;
+        @include m.tablet {
+            @include m.flex (row, nowrap, space-between, center);
+            margin: 0 2rem;
+        }
+    }
+    &__li {
+        padding: 0 1rem;
+    }
+    &__a {
+        color: map-get(v.$colores, color-secundario);
+        font-family: map-get(v.$fuentes, tipo-secundaria);
+        font-weight: 800;
+        font-size: .8em;
+        &--mod {
+            color: map-get(v.$colores, color-primario);
+        }
+    }
+    &--mod {
+        top: 0;
+        .c-header__autor {
+            color: map-get(v.$colores, color-primario);
+        }
+        .c-header__a {
+            color: map-get(v.$colores, color-primario);
+        }
+    }
+}

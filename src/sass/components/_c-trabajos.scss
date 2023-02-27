@@ -1,0 +1,82 @@
+@use 'settings/variables' as v;
+@use 'tools/mixins' as m;
+
+.c-trabajos {
+    @include m.flex (column, nowrap, center, center);
+    padding: 0.5rem;
+    @include m.telefono-xl {
+        padding: 1rem 2rem;
+    }
+    @include m.tablet {
+        width: 90%;
+    }
+    &__h3 {
+        font-size: 1.5em;
+        margin-top: 2rem;
+        @include m.telefono-m {
+            font-size: 1.8em;
+        }
+        @include m.telefono-xl {
+            font-size: 2.5em;
+        }
+        @include m.tablet {
+            font-size: 3em;
+            margin: 3rem 0 2rem;
+        }
+        span {
+            color: map-get(v.$colores, color-fondo);
+        }
+    }
+    &__h4 {
+        font-size: 1.1em;
+        margin-top: 1rem;
+        @include m.telefono-m {
+            font-size: 1.25em;
+        }
+        @include m.telefono-xl {
+            font-size: 1.5em;
+            margin-top: 2rem;
+        }
+        @include m.tablet {
+            margin: 1rem;
+        }
+    }
+    &__ul {
+        margin: 1rem 0;
+        
+        @include m.grid (1, 1rem);
+        @include m.telefono-m {
+            @include m.grid (2, 0.5rem);
+        }
+        @include m.telefono-xl {
+            @include m.grid (2, 1.5625rem);
+        }
+        @include m.tablet {
+            @include m.grid (3, 1.5625rem);
+        }
+    }
+    &__li {
+        @include m.flex (column, nowrap, center, center);
+        cursor: pointer;
+        position: relative;
+        &:hover {
+            .c-trabajos__img1 {
+                opacity: 0.75;
+            }
+            .c-trabajos__img2 {
+                display: block;
+            }
+        }
+    }
+    &__img1 {
+        border-radius: 15px;
+        transition: opacity 1s ease;
+    }
+    &__img2 {
+        font-size: 1.25rem;
+        color: map-get(v.$colores, color-primario);
+        position: absolute;
+        transition: all 1s ease;
+        display: none;
+    }
+}

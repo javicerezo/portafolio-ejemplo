@@ -1,7 +1,12 @@
 
-.u-flex {
-    display: flex !important;
-}
 .u-rotation {
     transform: rotate(180deg);
+}
+.u-display {
+    &--flex {
+        display: flex;
+    }
+    &--none {
+        display: none;
+    }
 }

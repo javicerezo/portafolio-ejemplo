@@ -1,32 +1,38 @@
 @use 'settings/variables' as v;
 
 // RESPONSIVE
-@mixin telefonoM {
-    @media (min-width: v.$telefonoM){
+@mixin telefono-m {
+    @media (min-width: map-get(v.$medidas, telefono-m)){
         @content;
     }
 }
 
-@mixin telefonoXL {
-    @media (min-width: v.$telefonoXL){
+@mixin telefono-xl {
+    @media (min-width: map-get(v.$medidas, telefono-xl)){
         @content;
     }
 }
 
 @mixin tablet {
-    @media (min-width: v.$tablet){
+    @media (min-width: map-get(v.$medidas, tablet)){
         @content;
     }
 }
 
 @mixin desktop {
-    @media (min-width: v.$desktop){
+    @media (min-width: map-get(v.$medidas, desktop)){
         @content;
     }
 }
 
-@mixin desktopXL {
-    @media (min-width: v.$desktopXL){
+@mixin desktop-m {
+    @media (min-width: map-get(v.$medidas, desktop-m)){
+        @content;
+    }
+}
+
+@mixin desktop-xl {
+    @media (min-width: map-get(v.$medidas, desktop-xl)){
         @content;
     }
 }
@@ -52,4 +58,13 @@
     border-radius: $border-radius;
     background: $color-fondo;
     box-shadow: $eje $eje ($eje*2) $color-sombra1, (-$eje) (-$eje) ($eje*2) $color-sombra2;
+}
+
+// POSITION
+@mixin position ($position, $top:null, $right:null, $bottom:null, $left:null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
 }

@@ -1,0 +1,86 @@
+@use 'settings/variables' as v;
+@use 'tools/mixins' as m;
+
+.c-cuadro {
+    &__sup {
+        background-color: map-get(v.$colores, color-fondo-transp);
+        z-index: 99;
+        @include m.position (fixed, 0.938rem, null, null, .9375rem);
+        height: 1.25rem;
+        width: calc( 100% - 1.875rem );
+        &--mod {
+            backdrop-filter: blur(2px);
+            height: 2.1875rem;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+    &__der {
+        display: none;
+        @include m.tablet {
+            @include m.position (fixed, 2.1875rem, .9375rem, null, null);
+            background-color: map-get(v.$colores, color-fondo-transp);
+            z-index: 99;
+            width: 1.25rem;
+            height: calc( 100% - 4.375rem );
+            @include m.flex (column, nowrap, center, center);
+            &--mod {
+                backdrop-filter: blur(1px);
+                height: calc( 100% - 3.4375rem );
+                right: 0;
+            }
+            
+            a {
+                font-size: .375em;
+                margin: 0.2rem 0;
+            }
+        }
+    }
+    &__inf {
+        display: none;
+        @include m.tablet {
+            @include m.position (fixed, null, null, .9375rem, .9375rem);
+            background-color: map-get(v.$colores, color-fondo-transp);
+            z-index: 99;
+            height: 1.25rem;
+            width: calc( 100% - 1.875rem );
+            @include m.flex (row, nowrap, center, center);
+            &--mod {
+                backdrop-filter: blur(1px);
+                left: 0;
+                bottom: 0;
+                width: 100%;
+            }
+            p {
+                font-size: .9375rem;
+                font-style: italic;
+            }
+            span {
+                margin: 0 .625rem;
+            }
+            a {
+                color: #fff;
+            }
+        }
+    }
+    &__izq {
+        display: none;
+        @include m.tablet {
+            @include m.position (fixed, 2.1875rem, 0, 0, .9375rem);
+            background-color: map-get(v.$colores, color-fondo-transp);
+            z-index: 99;
+            width: 1.25rem;
+            height: calc( 100% - 4.375rem );
+            @include m.flex (column, nowrap, center, center);
+            &--mod {
+                backdrop-filter: blur(1px);
+                height: calc( 100% - 3.4375rem );
+                left: 0;
+            }
+            a {
+                margin: 0.5rem 0;
+            }
+        }
+    }
+}
