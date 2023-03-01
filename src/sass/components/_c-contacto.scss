@@ -31,6 +31,7 @@
     &__h3 {
         font-size: 1.5em;
         padding: 1rem;
+
         @include m.telefono-m {
             font-size: 1.8em;
         }
@@ -67,7 +68,6 @@
         }
         input, textarea {
             width: 100%;
-            background-color: map-get(v.$colores, color-secundario);
             padding: .625rem;
             border: 2px solid map-get(v.$colores, color-fondo);
             border-radius: .625rem;

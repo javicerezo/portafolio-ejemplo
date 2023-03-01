@@ -3,10 +3,13 @@
 
 .c-header {
     @include m.flex (row, nowrap, space-between, center);
-    position: fixed;
-    top: 2.5rem;
+    @include m.position (fixed, 0, null, null, null);
+    transition: all 0.5s ease;
     height: 2.1875rem;
     z-index: 100;
+    @include m.tablet {
+        top: 2.5rem;
+    }
     &--mod {
         top: 0;
     }
@@ -18,24 +21,22 @@
         }
     }
     &__dark-mode {
-        background-color: map-get(v.$colores, color-fondo);
+        @include m.theme(background-color, v.$color-fondo-img-dark);
         border-radius: .9375rem;
         padding: 0 0.5rem;
         position: relative;
+        transition: all 0.5s ease;
         cursor: pointer;
-        &--mod {
-            background-color: #343d5b;
-        }
+
     }
     &__img {
         height: 1.875em;
         width: 1.875em;
         position: absolute;
         top: -.05rem;
-        left: -.2rem;
-        &--mod {
-            left: 1.75rem;
-        }
+        left: -0.2rem;
+        transition: all 0.5s ease;
+
     }
     &__span {
         color: map-get(v.$colores, color-secundario);
@@ -44,12 +45,13 @@
         padding: 0 0.2rem;
     }
     &__autor {
-        color: map-get(v.$colores, color-secundario);
+        color: map-get(v.$colores , color-primario);
         font-family: map-get(v.$fuentes, tipo-secundaria);
         padding-left: 0.5rem;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         display: none;
+        transition: all 0.5s ease;
         @include m.telefono-m {
             font-size: .6em;
             display: block;
@@ -58,43 +60,84 @@
             font-size: .75em;
             padding-left: 1rem;
         }
+        @include m.tablet {
+            color: map-get(v.$colores, color-secundario);
+        }
     }
     &__burger {
         position: relative;
-        // border: 2px solid map-get(v.$colores, color-primario);
-        // border-radius: 5px;
-        // padding: .125rem .25rem;
         margin: 0 1rem;
         @include m.tablet {
             display: none;
         }
-    }
-    &__icono-m {
-        font-size: 20px;
-        position: relative;
-        // display: none;
-    }
-    &__icono-x {
-        font-size: 25px;
-        display: none;
+        input {
+            display: none;
+        }
+        &-icono {
+            font-size: 20px;
+            position: relative;
+        }
     }
     &__nav {
-        display: none;
+        opacity: 0;
+        visibility: hidden;
+        width: 0%;
+        @include m.position (absolute, null, -7.8857rem, -9.8476rem, null);
+        @include m.flex (column, nowrap, center, center);
+        background-color: map-get(v.$colores, color-fondo-transp);
+        backdrop-filter: blur(2px);
+        transition: all 1s ease;
         @include m.tablet {
             @include m.flex (row, nowrap, space-between, center);
+            top: 0;
+            right: 0;
+            bottom: 0;
             margin: 0 2rem;
+            background-color: transparent;
+            backdrop-filter: blur(0);
+            opacity: 1;
+            visibility: visible;
+            width: auto;
+        }
+        &--mod {
+            opacity: 1;
+            visibility: visible;
+            width: auto;
+            right: 0;
         }
     }
     &__li {
-        padding: 0 1rem;
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid map-get(v.$colores, color-primario);
+        @include m.tablet {
+            padding: 0 0.9rem;
+            border-bottom: none;
+        }
+        &:last-child {
+            @include m.flex (row, nowrap, center, center);
+            a {
+                padding: 0 0.5rem;
+            }
+            @include m.tablet {
+                display: none; 
+            }
+        }
     }
     &__a {
-        color: map-get(v.$colores, color-secundario);
+        color: map-get(v.$colores, color-primario);
         font-family: map-get(v.$fuentes, tipo-secundaria);
         font-weight: 800;
         font-size: .8em;
+        transition: all 0.5s ease;
+        @include m.tablet {
+            color: map-get(v.$colores, color-secundario);
+        }
         &--mod {
             color: map-get(v.$colores, color-primario);
+        }
+        &:hover {
+            color: map-get(v.$colores, color-activo);
+            transform: scale(1.1);
         }
     }
     &--mod {
@@ -104,6 +147,9 @@
         }
         .c-header__a {
             color: map-get(v.$colores, color-primario);
+            &:hover {
+                color: map-get(v.$colores, color-activo);
+            }
         }
     }
 }

@@ -1,0 +1,14 @@
+@use 'settings/variables' as v;
+@use 'tools/mixins' as m;
+
+.c-efecto {
+    &__ola-1 {
+        @include m.theme(fill, color-ola-1);
+    }
+    &__ola-2 {
+        @include m.theme(fill, color-ola-2);
+    }
+    &__ola-3 {
+        @include m.theme(fill, color-ola-3);
+    }
+}
