@@ -3,7 +3,7 @@
 
 .c-cuadro {
     &__sup {
-        @include m.theme(background-color, v.$color-fondo-transp);
+        background-color: map-get(v.$colores, color-fondo-transp);
         z-index: 99;
         transition: all 0.5s ease;
         @include m.position (fixed, 0, 0, null, null);
@@ -29,7 +29,7 @@
         display: none;
         @include m.tablet {
             @include m.position (fixed, 2.1875rem, .9375rem, null, null);
-            @include m.theme(background-color, v.$color-fondo-transp);
+            background-color: map-get(v.$colores, color-fondo-transp);
             z-index: 99;
             width: 1.25rem;
             height: calc( 100% - 4.375rem );
@@ -52,7 +52,7 @@
         display: none;
         @include m.tablet {
             @include m.position (fixed, null, null, .9375rem, .9375rem);
-            @include m.theme(background-color, v.$color-fondo-transp);
+            background-color: map-get(v.$colores, color-fondo-transp);
             z-index: 99;
             height: 1.25rem;
             width: calc( 100% - 1.875rem );
@@ -83,7 +83,7 @@
         display: none;
         @include m.tablet {
             @include m.position (fixed, 2.1875rem, 0, 0, .9375rem);
-            @include m.theme(background-color, v.$color-fondo-transp);
+            background-color: map-get(v.$colores, color-fondo-transp);
             z-index: 99;
             width: 1.25rem;
             height: calc( 100% - 4.375rem );

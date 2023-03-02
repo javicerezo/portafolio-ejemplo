@@ -5,7 +5,7 @@
 - [Haz clic para ver el proyeto](https://javicerezo.github.io/ejemplo-portafolio/) 🚀
 
 ## Descripción 📑
-Un ejemplo sencillo de un portafolio para un desarrollador web.
+Un ejemplo sencillo de un portafolio para un desarrollador web. Sencillo pero robusto gracias a la arquitectura tipo BEMIT, usa @media(...) para detectar la preferencia del usuario en el modo claro-oscuro (hecho con scss).
 
 ## Tecnologías 🛠
 <!-- Iconos sacados de y https://github.com/alexandresanlim/Badges4-README.md-Profile -->

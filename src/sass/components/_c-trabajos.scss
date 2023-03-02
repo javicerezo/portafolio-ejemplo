@@ -78,5 +78,6 @@
         position: absolute;
         transition: all 1s ease;
         display: none;
+        pointer-events: none; //imp para desactivar su evento indeseado
     }
 }

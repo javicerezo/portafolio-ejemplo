@@ -20,8 +20,9 @@
             margin-left: 3.125rem;
         }
     }
+
     &__dark-mode {
-        @include m.theme(background-color, v.$color-fondo-img-dark);
+        background-color: map-get(v.$colores, color-fondo-img-JC);
         border-radius: .9375rem;
         padding: 0 0.5rem;
         position: relative;
@@ -76,6 +77,7 @@
         &-icono {
             font-size: 20px;
             position: relative;
+            color: map-get(v.$colores, color-primario);
         }
     }
     &__nav {
@@ -117,6 +119,7 @@
             @include m.flex (row, nowrap, center, center);
             a {
                 padding: 0 0.5rem;
+                color: map-get(v.$colores, color-primario);
             }
             @include m.tablet {
                 display: none; 

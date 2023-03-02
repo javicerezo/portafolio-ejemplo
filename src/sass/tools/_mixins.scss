@@ -69,23 +69,3 @@
     left: $left;
 }
 
-// DARKMODE @media (prefers-color-scheme: dark)
-// gracias a https://www.fabrizioduroni.it/2020/05/20/dark-mode-css-sass-scss/
-@mixin themeProperty($theme, $property, $color, $additionalPropertiesPositionIsFront, $additionalProperties) {
-    @if $additionalPropertiesPositionIsFront {
-      #{$property}: unquote($additionalProperties + ' ' + map-get($theme, $color));
-    } @else {
-      #{$property}: unquote(map-get($theme, $color) + ' ' + $additionalProperties);
-    }
-}
-  
-@mixin theme($property, $color, $additionalPropertiesPositionIsFront: false, $additionalProperties: '') {
-    $light: map-get(v.$themes, light-theme);
-    $dark: map-get(v.$themes, dark-theme);
-  
-    @include themeProperty($light, $property, $color, $additionalPropertiesPositionIsFront, $additionalProperties);
-  
-    @media (prefers-color-scheme: dark) {
-      @include themeProperty($dark, $property, $color, $additionalPropertiesPositionIsFront, $additionalProperties);
-    }
-}

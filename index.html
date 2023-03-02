@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="preload" href="build/css/app.css" as="style"> -->
     <link rel="stylesheet" href="build/css/app.css">
-    
-    <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
 </head>
 
 <body class="js-body">
@@ -26,7 +24,7 @@
                 <span class="c-header__span"><i class="fa-solid fa-moon"></i></span>
                 <span class="c-header__span"><i class="fa-solid fa-sun"></i></span>
             </div>
-            <p class="c-header__autor"> El Portfolio de < NombreApellidos >
+            <p class="c-header__autor"><a href="https://javicerezo.github.io/ejemplo-portafolio/" target="_blank"> El Portafolio de < NombreApellidos ></a>
             </p>
         </div>
         <div class="c-header__burger js-header__burger">
@@ -34,9 +32,6 @@
             <label class="c-header__burger-icono" for="check__menu">
                 <i class="fa-solid fa-bars"></i>
             </label>
-            <!-- <label class="c-header__icono-x" for="check__menu">
-                <i class="fa-solid fa-xmark"></i>
-            </label> -->
         </div>
         <ul class="c-header__nav">
             <li class="c-header__li"><a class="c-header__a" href="#c-sobre-mi">SOBRE MÍ</a></li>
@@ -82,17 +77,6 @@
         </div>
     </section>
     <!-- FIN DE PORTADA -->
-
-
-    <dark-mode-toggle
-        legend="Theme Switcher"
-        appearance="switch"
-        dark="Dark"
-        light="Light"
-        remember="Remember this"
-    ></dark-mode-toggle>
-
-
 
     <!-- SEPARADOR -->
     <div class="c-tecnologias o-container">
@@ -207,35 +191,41 @@
     <main class="c-trabajos o-container js-trabajos" id="c-trabajos">
         <h3 class="c-trabajos__h3">Mis<span> trabajos </span>web</h3>
         <h4 class="c-trabajos__h4">Una muestra de mis trabajos.</h4>
-        <ul class="c-trabajos__ul">
-            <li class="c-trabajos__li">
+        <ul class="c-trabajos__ul js-trabajos__ul">
+            <li class="c-trabajos__li" value="0">
                 <img class="c-trabajos__img1" loading="lazy" 
-                src="build/img/portafolio/submarine.png" alt="imagen portafolio">
+                src="build/img/portafolio/submarine.png" alt="imagen portafolio"
+                value="0">
                 <span class="c-trabajos__img2"><i class="fas fa-plus fa-3x"></i></span>
             </li>
             <li class="c-trabajos__li">
                 <img class="c-trabajos__img1" loading="lazy" 
-                src="build/img/portafolio/cabin.png" alt="imagen portafolio">
+                src="build/img/portafolio/cabin.png" alt="imagen portafolio"
+                value="1">
                 <span class="c-trabajos__img2"><i class="fas fa-plus fa-3x"></i></span>
             </li>
-            <li class="c-trabajos__li">
+            <li class="c-trabajos__li" value="2">
                 <img class="c-trabajos__img1" loading="lazy" 
-                src="build/img/portafolio/cake.png" alt="imagen portafolio">
+                src="build/img/portafolio/cake.png" alt="imagen portafolio"
+                value="2">
                 <span class="c-trabajos__img2"><i class="fas fa-plus fa-3x"></i></span>
             </li>
-            <li class="c-trabajos__li">
+            <li class="c-trabajos__li" value="3">
                 <img class="c-trabajos__img1" loading="lazy" 
-                src="build/img/portafolio/game.png" alt="imagen portafolio">
+                src="build/img/portafolio/game.png" alt="imagen portafolio"
+                value="3">
                 <span class="c-trabajos__img2"><i class="fas fa-plus fa-3x"></i></span>
             </li>
-            <li class="c-trabajos__li">
+            <li class="c-trabajos__li" value="4">
                 <img class="c-trabajos__img1" loading="lazy" 
-                src="build/img/portafolio/safe.png" alt="imagen portafolio">
+                src="build/img/portafolio/safe.png" alt="imagen portafolio"
+                value="4">
                 <span class="c-trabajos__img2"><i class="fas fa-plus fa-3x"></i></span>
             </li>
-            <li class="c-trabajos__li">
+            <li class="c-trabajos__li" value="5">
                 <img class="c-trabajos__img1" loading="lazy" 
-                src="build/img/portafolio/circus.png" alt="imagen portafolio">
+                src="build/img/portafolio/circus.png" alt="imagen portafolio"
+                value="5">
                 <span class="c-trabajos__img2"><i class="fas fa-plus fa-3x"></i></span>
             </li>
         </ul>
@@ -282,7 +272,26 @@
         </div>
     </section>
     <!-- FIN CONTACTO -->
-    
+
+    <!-- MODALES PORTFOLIO -->
+    <section class="c-modal">
+        <div class="c-modal__contenedor">
+            <div class="c-modal__superior">
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <h3 class="c-modal__titulo">titulo</h3>
+            <div class="c-modal__img" >
+                <img src="build/img/portafolio/submarine.png" loading="lazy">
+            </div>
+            <div class="c-modal__inferior">
+                <p class="c-modal__parrafo"><span>Características: tecnologías</span></p>
+                <p>Descripcion</p>
+                <a href="#" target="_blank" class="o-button o-button--amarillo">Ver trabajo</a>
+            </div>
+        </div>
+    </section>
+    <!-- FIN MODALES -->
+
     <!-- FOOTER -->
     <footer class="c-footer o-container">
         <p class="c-footer__autor">Nombre Apellidos - <span>Frontend developer</span></p>
@@ -295,29 +304,6 @@
         </div>
     </footer>
     <!-- FIN FOOTER -->
-
-    <!-- MODALES PORTFOLIO -->
-    <!-- <div id="modales__listado">
-            <section class="modal">
-                <div class="modal__contenedor">
-                    <div class="parte_superior">
-                        <div>
-                            <a href="#"><i class="fa-solid fa-angle-left"></i></a>
-                            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
-                        </div>
-                        <a href="#" class="modal__close">X</a>
-                    </div>
-                    <h3 class="modal__titulo">titulo</h3>
-                    <img loading="lazy" src="#" class="modal__img">
-                    <div class="parte_inferior">
-                        <p class="modal__parrafo"><span>Características: tecnologoias</span><br><br>descripcion</p>
-                        <a href="#" target="_blank" class="boton btn-amarillo">Ver trabajo</a>
-                    </div>
-                </div>
-            </section>
-    </div> -->
-    <!-- FIN MODALES -->
-
 
     <!-- <script src="build/js/bundle.min.js"></script> -->
     <!-- DESARROLLO  -->

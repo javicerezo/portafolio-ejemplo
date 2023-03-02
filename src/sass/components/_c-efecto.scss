@@ -3,12 +3,12 @@
 
 .c-efecto {
     &__ola-1 {
-        @include m.theme(fill, color-ola-1);
+        fill: map-get(v.$colores, color-ola-1);
     }
     &__ola-2 {
-        @include m.theme(fill, color-ola-2);
+        fill: map-get(v.$colores, color-ola-2);
     }
     &__ola-3 {
-        @include m.theme(fill, color-ola-3);
+        fill: map-get(v.$colores, color-ola-3);
     }
 }

@@ -1,0 +1,55 @@
+@use 'tools/mixins' as m;
+@use 'settings/variables' as v;
+
+.c-modal {
+    @include m.position (fixed, 0, 0, 0, 0);
+    z-index: 101;
+    background-color: #111111bd;
+    @include m.flex (column, nowrap, center, center);
+    // display: none;
+    &--mod {
+        display: flex;
+    }
+    &__contenedor {
+        width: 100%;
+        padding: 1rem;
+        background-color: map-get(v.$colores, color-primario);
+        border-radius: 10px;
+        @include m.tablet {
+            width: 50%;
+        }
+        // opacity: 0;
+        // visibility: hidden;
+        pointer-events: none;
+        &--mod {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: unset;
+        }
+    }
+    &__superior {
+        width: 100%;
+        height: auto;
+        @include m.flex(row, nowrap, flex-end, center);
+        i {
+            padding: .625rem;
+            margin-right: 1rem;
+            font-size: 1.25em;
+        }
+    }
+    &__titulo {
+        font-size: 1.25em;
+        padding: 1rem;
+    }
+    &__img {
+        padding: 1rem;
+        img {
+            border-radius: 6px;
+        }
+    }
+    &__inferior {
+        width: 100%;
+        padding: 1rem;
+        @include m.flex (column, nowrap, center, flex-start);
+    }
+}
