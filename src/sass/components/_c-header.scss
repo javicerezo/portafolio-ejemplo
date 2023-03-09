@@ -139,7 +139,7 @@
             color: map-get(v.$colores, color-primario);
         }
         &:hover {
-            color: map-get(v.$colores, color-activo);
+            color: map-get(v.$colores, color-hover);
             transform: scale(1.1);
         }
     }
@@ -151,7 +151,7 @@
         .c-header__a {
             color: map-get(v.$colores, color-primario);
             &:hover {
-                color: map-get(v.$colores, color-activo);
+                color: map-get(v.$colores, color-hover);
             }
         }
     }

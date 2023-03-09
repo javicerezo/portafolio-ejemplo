@@ -66,19 +66,24 @@
             }
         }
     }
-        &__p {
-            font-size: .9375rem;
-            font-style: italic;
-            &--mod {
-                display: none;
-            }                  
-            span {
-                margin: 0 .625rem;
-            }
-            a {
-                color: map-get(v.$colores, color-secundario);
+    &__p {
+        color: map-get(v.$colores, color-secundario);
+        font-size: .9375rem;
+        font-style: italic;
+        &--mod {
+            display: none;
+        }                  
+        span {
+            margin: 0 .625rem;
+        }
+        a {
+            font-weight: 600;
+            &:hover {
+                color: map-get(v.$colores, color-hover);
+                transform: scale(1.1);
             }
         }
+    }
     &__izq {
         display: none;
         @include m.tablet {

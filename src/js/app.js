@@ -6,7 +6,8 @@
     const btnDarkmode = document.querySelector('.js-header__dark-mode');
     const btnBurger = document.querySelector('.js-header__burger i');
     const listaTrabajos = document.querySelector('.js-trabajos__ul');
-    
+    const listaModales = document.querySelectorAll('.js-modal');
+
     // EVENTOS SCROLL
     window.addEventListener('DOMContentLoaded', (() => {
         darkMode();
@@ -50,9 +51,18 @@
     listaTrabajos.addEventListener('click', (e) => {
         let i = parseInt(e.target.getAttribute('value'));
         abrirModal(i);
+        listaModales[i].addEventListener('click', (e) => {
+            e.preventDefault();
+            if(e.target.classList.contains('fa-solid')){
+                cerrarModal(i);
+            }
+            if(e.target.classList.contains('js-modal')){
+                cerrarModal(i);
+            }
+        })
     });
-
-
+    
+    
     // FUNCIONES 
     /* funcioón que detecta el modo oscuro de las preferencias del usuario y añade la clase darkmode al body para 
     poder cambiar imagenes de fondo, también está pendiente al cambio manual de las preferencias para hacer el cambio */
@@ -73,9 +83,10 @@
     }
 
     function abrirModal (i) {
-        console.log('estoy abriendo el modal'+i);
+        listaModales[i].classList.add('c-modal--show'); 
     }
+
     function cerrarModal (i) {
-        console.log('cerrando el modal');
+        listaModales[i].classList.remove('c-modal--show');
     }
 })();
