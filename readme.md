@@ -5,7 +5,7 @@
 - [Haz clic para ver el proyeto](https://javicerezo.github.io/ejemplo-portafolio/) 🚀
 
 ## Descripción 📑
-Un ejemplo sencillo de un portafolio para un desarrollador web. Sencillo pero robusto gracias a la arquitectura tipo BEMIT, usa @media(...) para detectar la preferencia del usuario en el modo claro-oscuro (hecho con scss).
+Un ejemplo sencillo de un portafolio para un desarrollador web. Sencillo pero muy robusto gracias a la arquitectura tipo BEMIT (BEM + ITCSS). Contiene el JavaScript mínimo para que funcione correctamente la página (no tiene validación en el formulario).
 
 ## Tecnologías 🛠
 <!-- Iconos sacados de y https://github.com/alexandresanlim/Badges4-README.md-Profile -->
@@ -31,7 +31,7 @@ Si quieres hechar un vistazo al proyecto, te recomiendo:
 
 ## Instalación 
 Este proyecto no necesita de instalación. Simplemente, haz doble click en el enlace del ejemplo en vivo o descargalo, y ejecuta el .html.
-Ten en cuenta que para poder hacer cualquier tipo de modificación en los .sass o .js, primero deberás ejecutar el comando "npx gulp watchArchivos" del gulpfile.js
+Ten en cuenta que para poder hacer cualquier tipo de modificación en los .sass o en el .js, primero, deberás ejecutar el comando "npx gulp watchArchivos" del gulpfile.js
   
 ## Licencia 📄
 MIT Public License v3.0
