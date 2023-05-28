@@ -1,5 +1,5 @@
 # Título del proyecto
-![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/imagen1.png)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/portafolio.png)
 
 ## Ejemplo en vivo
 - [Haz clic para ver el proyeto](https://javicerezo.github.io/ejemplo-portafolio/) 🚀
@@ -19,11 +19,11 @@ Un ejemplo sencillo de un portafolio para un desarrollador web. Sencillo pero mu
 ## Vista previa del proyecto
 Si quieres hechar un vistazo al proyecto, te recomiendo:
 
-![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/imagen2.png)
-![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/imagen3.png)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/portafolio-2.png)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/portafolio-3.png)
 
 ## Autor ✒️
-**JAVI CEREZO**
+**JAVI CEREZO** 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/javicerezo/)
 [![Porfolio web](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://javicerezo.netlify.app/)
