@@ -1,4 +1,4 @@
-# Título del proyecto
+# Portafolio desarrollador web
 ![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/portafolio.png)
 
 ## Ejemplo en vivo
