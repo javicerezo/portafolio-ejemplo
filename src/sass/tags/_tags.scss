@@ -60,10 +60,7 @@ body {
             background-image: url(../img/portada2.jpg);
         }
         .c-contacto {
-            background-image: url(../img/oficina2.jpg);
-            &__datos{
-                backdrop-filter: blur(.0625rem);
-            }
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/oficina2.jpg");
         }
         .c-header__nav {
             background-color: map-get(v.$colores, color-fondo);

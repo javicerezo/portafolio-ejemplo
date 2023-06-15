@@ -70,9 +70,6 @@
             border: 2px solid map-get(v.$colores, color-fondo);
             border-radius: .625rem;
             margin: .625rem 0;
-            // &:focus {
-            //     backdrop-filter: blu(.0625rem);
-            // }
         }
         textarea {
             min-height: 7.5rem;
