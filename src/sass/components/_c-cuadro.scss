@@ -67,7 +67,6 @@
         }
     }
     &__p {
-        color: map-get(v.$colores, color-secundario);
         font-size: .9375rem;
         font-style: italic;
         &--mod {

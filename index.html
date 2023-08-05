@@ -9,7 +9,7 @@
     <meta name="description" content="Portfolio profesional web">
     <link rel="shortcut icon" href="build/img/favicon-transp.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="preload" href="build/css/app.css" as="style"> -->
+    <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 
@@ -248,16 +248,14 @@
                 </div>
             </div>
             <form class="c-contacto__inputs" id="formulario">
-                <input id="nombre" type="text" placeholder="NOMBRE">
-                <input id="email" type="email" placeholder="EMAIL">
-                <textarea name="" id="asunto" placeholder="ASUNTO"></textarea>
-                <button class="c-contacto__btn o-button o-button--amarillo btn-formulario"
-                id="btn-enviar" type="submit">Enviar <i class="fa-solid fa-paper-plane"></i>
-                </button>
+                <input id="nombre" name="nombre" type="text" placeholder="NOMBRE">
+                <input id="correo" name="correo" type="email" placeholder="EMAIL">
+                <textarea id="asunto" name="asunto" placeholder="ASUNTO"></textarea>
+                <button class="c-contacto__btn js-contacto__btn o-button o-button--amarillo" id="btn-enviar" type="submit">Enviar</button>
             </form>
         </div>
         <div class="c-contacto__respuesta">
-            <div class="spinner display_none" id="spinner">
+            <div class="spinner u-display--none" id="spinner">
                 <div class="sk-chase">
                     <div class="sk-chase-dot"></div>
                     <div class="sk-chase-dot"></div>
@@ -267,7 +265,6 @@
                     <div class="sk-chase-dot"></div>
                 </div>
             </div>
-            <div class="spinner2 display_none"></div>
             <div class="mensaje" id="mensaje"></div>
         </div>
     </section>
@@ -385,7 +382,7 @@
     </footer>
     <!-- FIN FOOTER -->
 
-    <script src="build/js/bundle.min.js"></script>
+    <script src="build/js/bundle.js"></script>
 </body>
 
 </html>

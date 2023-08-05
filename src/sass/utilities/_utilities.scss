@@ -10,3 +10,30 @@
         display: none;
     }
 }
+.u-opacity {
+    &--50 {
+        opacity: 0.5;
+    }
+}
+.u-cursor{
+    &--not-allowed {
+        cursor: not-allowed;
+    }
+}
+
+.u-mensaje {
+    font-size: 1.1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5rem;
+    &--error {
+        color: red;
+    }
+    &--exito {
+        color: green;
+    }
+    &--alerta {
+        color: yellow;
+    }
+}
