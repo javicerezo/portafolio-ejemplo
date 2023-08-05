@@ -14,7 +14,6 @@ Un ejemplo sencillo de un portafolio para un desarrollador web. Sencillo pero mu
 [![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://es.wikipedia.org/wiki/Sass)
 [![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://es.wikipedia.org/wiki/JavaScript)
 [![GULP](https://img.shields.io/badge/Gulp-CF4647?style=for-the-badge&logo=gulp&logoColor=white)](https://es.wikipedia.org/wiki/Gulp)
-[![MYSQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://es.wikipedia.org/wiki/MySQL)
 
 ## Vista previa del proyecto
 Si quieres hechar un vistazo al proyecto, te recomiendo:
