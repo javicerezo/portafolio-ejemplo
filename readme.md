@@ -2,7 +2,7 @@
 ![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/ejemplo-portafolio/master/src/assets/img/portafolio.png)
 
 ## Ejemplo en vivo
-- [Haz clic para ver el proyeto](https://javicerezo.github.io/ejemplo-portafolio/) 🚀
+- [Haz clic para ver el proyeto](https://javicerezo.github.io/portafolio-ejemplo/) 🚀
 
 ## Descripción 📑
 Un ejemplo sencillo de un portafolio para un desarrollador web. Sencillo pero muy robusto gracias a la arquitectura tipo BEMIT (BEM + ITCSS). Contiene el JavaScript mínimo para que funcione correctamente la página (no tiene validación en el formulario).
