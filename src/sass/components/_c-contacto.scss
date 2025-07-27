@@ -2,7 +2,7 @@
 @use 'tools/mixins' as m;
 
 .c-contacto {
-    background-image: url(../img/oficina.jpg);
+    background-image: url('../../public/assets/imgs/oficina.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
